@@ -16,7 +16,7 @@ COPY index.js /usr/share/nginx/html
 
 #  copies index.js into the image in the same layer
 
-EXPOSE 8080
+EXPOSE 50000
 
 #  Inform Docker that the container listens on the specified network ports at runtime.
 #  1- type in cmd [ docker image build -t melodick/rps:tagname .] to build the image.
