@@ -5,6 +5,7 @@ registryCredential = 'Dockerhub'
 dockerImage = ''
 }
 agent any
+  stages {
 stage('Building our image') {
 steps{
 script {
@@ -27,4 +28,4 @@ sh "docker rmi $registry:$BUILD_NUMBER"
 }
 }
 }
-
+}
