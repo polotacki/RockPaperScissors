@@ -6,7 +6,7 @@ environment {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t polotacki/RockPaperScissors .'
+        sh 'docker build -t polotacki/rockpaperscissors .'
       }
     }
     stage('Login') {
@@ -16,7 +16,7 @@ environment {
     }
     stage('Push') {
       steps {
-        sh 'docker push melodick/rps'
+        sh 'docker push melodick/rps:latest'
       }
     }
   }
