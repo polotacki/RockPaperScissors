@@ -5,12 +5,6 @@ registryCredential = 'Dockerhub'
 dockerImage = ''
 }
 agent any
-stages {
-stage('Cloning our Git') {
-steps {
-git 'https://github.com/polotacki/rockpaperscissors.git'
-}
-}
 stage('Building our image') {
 steps{
 script {
